@@ -100,4 +100,4 @@ Não irá haver pois é um trabalho único
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este não tem qualquer tipo de licença.
