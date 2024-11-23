@@ -47,3 +47,39 @@ Use o seguinte comando para clonar o projeto:
 ```bash
 git clone https://github.com/OwenJin25/Application-Django.git
 cd Application-Django
+```
+### **2. Crie um Ambiente Virtual**
+
+Crie um ambiente virtual para isolar as dependências do projeto.
+```bash
+python -m venv venv
+```
+
+### **3. Instale as Dependências**
+
+Instale todas as bibliotecas necessárias para o projeto usando o arquivo requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+### **4. Configure o Base de Dados**
+
+O Django utiliza um Base de dados para armazenar informações. A primeira coisa a fazer é aplicar as migrações para configurar as tabelas no Base de dados.
+```bash
+## 1. Gerencia as migrações :
+python manage.py makemigrations
+## 2. Aplique as migrações para configurar as tabelas no base de dados:
+python manage.py migrate
+```
+### **5. Crie um Superutilizador**
+Crie um superusuário para acessar o painel administrativo do Django:
+
+```bash
+python manage.py createsuperuser
+```
+
+### **6. Inicie o Servidor**
+Inicie o servidor de desenvolvimento do Django para testar a aplicação localmente:
+
+```bash
+python manage.py runserver
+```
