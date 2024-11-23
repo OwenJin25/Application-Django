@@ -83,3 +83,21 @@ Inicie o servidor de desenvolvimento do Django para testar a aplicação localme
 ```bash
 python manage.py runserver
 ```
+
+## Testes
+
+Este projeto inclui testes unitários para validar as principais funcionalidades, como:
+- Criação automática de perfis ao registrar um usuário.
+- Publicação de tópicos e comentários.
+
+Para rodar os testes:
+```bash
+python manage.py test
+```
+### **9. Funcionalidades Futuras**
+
+Não irá haver pois é um trabalho único
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
