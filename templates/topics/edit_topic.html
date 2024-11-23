@@ -1,0 +1,23 @@
+{%load crispy_forms_tags %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Topic</title>
+    <!-- Adicionando Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <h1 class="text-primary">Edit Topic</h1>
+        
+        <!-- Exibir o formulário -->
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+            <a href="{% url 'topic_detail' topic.id %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>

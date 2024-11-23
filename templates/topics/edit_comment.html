@@ -1,0 +1,19 @@
+{%load crispy_forms_tags %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Comentário</title>
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Editar Comentário</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {{ form|crispy }}
+        <button type="submit">Salvar</button>
+    </form>
+    <a href="{% url 'topic_detail' comment.topic.id %}">Cancelar</a>
+</body>
+</html>
