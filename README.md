@@ -53,6 +53,7 @@ cd Application-Django
 Crie um ambiente virtual para isolar as dependências do projeto.
 ```bash
 python -m venv venv
+venv\Scripts\activate
 ```
 
 ### **3. Instale as Dependências**
